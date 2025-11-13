@@ -4,7 +4,8 @@ Aplicación de agenda médica desarrollada como prueba.
 Incluye frontend (HTML, CSS, jQuery, Bootstrap) y backend en ASP.NET Web API.
 Los datos se gestionan en memoria (sin base de datos).
 
-CARACTERÍSTICAS PRINCIPALES
+**CARACTERÍSTICAS PRINCIPALES**
+
 **FRONTEND**  (HTML, CSS, jQuery, Bootstrap)
   Interfaz limpia con Bootstrap
   Tabla con pacientes, códigos, fechas, horas y observaciones
