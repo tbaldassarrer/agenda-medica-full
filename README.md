@@ -35,4 +35,4 @@ Estructura del proyecto
       └── js/app.js
 
 
-Necesitas tener instalado .NET SDK (8 o 10).
+_Necesitas tener instalado .NET SDK (8 o 10)._
