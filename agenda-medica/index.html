@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agenda Médica</title>
+
+  <!-- BOOTSTRAP  -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-light">
+
+  <div class="container my-4">
+    <h3 class="mb-3">Agenda Médica</h3>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+
+  <!-- TÍTULO (arriba) -->
+  <div class="mb-3">
+    <h5 class="mb-0">Agenda</h5>
+  </div>
+
+  <!-- TABLA (centro) -->
+  <div class="table-responsive mb-3">
+    <table class="table table-sm table-hover align-middle" id="tablaAgenda">
+      <thead class="table-light">
+        <tr>
+          <th style="width: 40px;">P</th>
+          <th style="width: 40px;">E</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Código</th>
+          <th>Paciente</th>
+          <th>Observaciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaCitas">
+        <!-- Filas generadas por app.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CONTROLES INFERIORES (como en la imagen) -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+
+    <!-- Selects de médico y pendiente -->  
+    <div class="d-flex flex-wrap gap-3">
+      <div>
+        <label for="filtroMedico" class="form-label mb-1">Médico</label>
+        <select id="filtroMedico" class="form-select form-select-sm" style="min-width: 150px;">
+          <option value="todos">Todos</option>
+          <option value="verde">Médico VERDE</option>
+          <option value="azul">Médico AZUL</option>
+          <option value="rojo">Médico ROJO</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="filtroPendientes" class="form-label mb-1">Estado</label>
+        <select id="filtroPendientes" class="form-select form-select-sm" style="min-width: 170px;">
+          <option value="todos">Todas las citas</option>
+          <option value="pendientes">Solo pendientes (P marcada)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- LEYENDA DE COLORES (parte inferior derecha) -->
+    <div class="d-flex flex-wrap align-items-center gap-3">
+      <span class="small me-1">Agenda por colores:</span>
+
+      <div class="legend-item">
+        <span class="legend-color legend-verde"></span>
+        <span class="small">Médico VERDE</span>
+      </div>
+
+      <div class="legend-item">
+        <span class="legend-color legend-azul"></span>
+        <span class="small">Médico AZUL</span>
+      </div>
+
+      <div class="legend-item">
+        <span class="legend-color legend-rojo"></span>
+        <span class="small">Médico ROJO</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+    <!-- Modal detalle de cita -->
+<div class="modal fade" id="detalleCitaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detalle de la cita</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Fecha:</strong> <span id="modalFecha"></span></p>
+        <p><strong>Hora:</strong> <span id="modalHora"></span></p>
+        <p><strong>Código:</strong> <span id="modalCodigo"></span></p>
+        <p><strong>Paciente:</strong> <span id="modalPaciente"></span></p>
+        <p><strong>Observaciones:</strong> <span id="modalObservaciones"></span></p>
+        <p><strong>Médico:</strong> <span id="modalMedico"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS  -->
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>

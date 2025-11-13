@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VgHSY63o9tM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tatil\\Desktop\\AgendaBackend\\AgendaBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tatil\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "C:\\Users\\tatil\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,51 @@
+#tablaAgenda tbody tr {
+  font-size: 13px;
+}
+
+/* médicos por colores: pintamos las celdas (td) con un tono suave */
+.medico-verde td {
+  background-color: #e5ffe5;
+}
+
+.medico-azul td {
+  background-color: #e5f2ff;
+}
+
+.medico-rojo td {
+  background-color: #ffe5e5;
+}
+
+.col-pendiente {
+  text-align: center;
+}
+
+.col-e {
+  text-align: center;
+}
+
+/* Leyenda de colores (parte inferior) */
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.legend-verde {
+  background-color: #e5ffe5;
+}
+
+.legend-azul {
+  background-color: #e5f2ff;
+}
+
+.legend-rojo {
+  background-color: #ffe5e5;
+}
