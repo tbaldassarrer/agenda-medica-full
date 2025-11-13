@@ -1,12 +1,37 @@
-## Cómo ejecutar el proyecto
+Agenda Médica – Proyecto Full Stack
 
-### 1️⃣ Backend (.NET)
+Aplicación de agenda médica desarrollada como prueba.
+Incluye frontend (HTML, CSS, jQuery, Bootstrap) y backend en ASP.NET Web API.
+Los datos se gestionan en memoria (sin base de datos).
 
-```bash
-cd AgendaBackend
-dotnet run
-El backend se arranca en http://localhost:5203
+CARACTERÍSTICAS PRINCIPALES
+**FRONTEND**  (HTML, CSS, jQuery, Bootstrap)
+  Interfaz limpia con Bootstrap
+  Tabla con pacientes, códigos, fechas, horas y observaciones
+  Filtrado por médico (colores)
+  Filtrado por pendientes (P)
+  Filas coloreadas automáticamente según el médico
+  Modal con detalle de la cita al hacer clic en Código o Paciente
+  Responsive y compatible con cualquier navegador
 
-**Frontend**
-cd agenda-medica
-Abrir index.html con Live Server (VS Code) o en el navegador.
+**BACKEND** (C# + ASP.NET)
+  API REST con endpoint /api/citas
+  Datos almacenados en memoria
+  Respuestas JSON
+  Listo para extender o conectar a base de datos futura
+
+Estructura del proyecto
+  AgendaMedicaProyecto/
+│
+├── AgendaBackend/        ← Backend .NET (Web API)
+│     ├── Program.cs
+│     ├── Controllers/
+│     └── ...
+│
+└── agenda-medica/        ← Frontend (HTML/CSS/JS)
+      ├── index.html
+      ├── css/styles.css
+      └── js/app.js
+
+
+Necesitas tener instalado .NET SDK (8 o 10).
